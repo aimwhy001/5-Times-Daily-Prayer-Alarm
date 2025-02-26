@@ -27,7 +27,7 @@ document.getElementById('locationForm').addEventListener('submit', async functio
 async function getPrayerTimes(location, country, state) {
     try {
         // Make the API request to get the prayer times for the given location
-        const response = await fetch(`http://api.aladhan.com/v1/timingsByCity?city=${location}&country=${country}&state=${state}&method=2`);
+        const response = await fetch(`https://api.aladhan.com/v1/timingsByCity?city=${location}&country=${country}&state=${state}&method=2`);
         
         // If the response isn't OK, throw an error
         if (!response.ok) {
